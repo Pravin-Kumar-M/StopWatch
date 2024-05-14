@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 style="color: pink; font-family: cursive;">StopWatch</h1>
+        <div class="timer">
+            <span id="min">00</span>
+            <span>:</span>
+            <span id="sec">00</span>
+            <span>:</span>
+            <span id="milli">00</span>
+        </div>
+        <div class="para">
+            <p>Minutes</p>
+            <p>Seconds</p>
+            <p>CentiSeconds</p>
+        </div>
+        <div id="button">
+            <button type="button" onclick="start()">start</button>
+            <button type="button" onclick="stop()">stop</button>
+            <button type="button" onclick="reset()">reset</button>
+            <button type="button" onclick="lap()">Record lap</button>
+        </div>
+    </div>
+    <div>
+        <h2 style="color: red; font-family: cursive;">Recorded Results :</h2>
+        <h4 id="lap"></h4>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
